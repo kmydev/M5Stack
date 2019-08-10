@@ -129,9 +129,9 @@ static uint8_t conv2d(const char* p) {
 }
 
 void buttons_test() {
-    //if(M5.BtnA.wasPressed()) {
-    //  hh++;
-    //}
+    if(M5.BtnA.wasPressed()) {
+      hh++;
+    }
     if(M5.BtnB.wasPressed()) {
       mm = (mm < 59) ? mm + 1 : 0;
     } 
