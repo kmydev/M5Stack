@@ -130,12 +130,12 @@ static uint8_t conv2d(const char* p) {
 
 void buttons_test() {
     if(M5.BtnA.wasPressed()) {
-      hh++;
+      hh = (hh < 23) ? hh + 1 : 0;
     }
     if(M5.BtnB.wasPressed()) {
       mm = (mm < 59) ? mm + 1 : 0;
     } 
     if(M5.BtnC.wasPressed()) {
-      ss = (ss < 31) ? 0 : 59;
+      ss = (ss < 30) ? 0 : 59;
     } 
 }
