@@ -1,6 +1,17 @@
-// 温湿度センサーDHT22(AM2302)を使用するサンプル
-// 参考:
+// M5Stackで温湿度センサーDHT22(AM2302)を使用するサンプル
+// SW参考:
 // https://www.instructables.com/id/ESP32-M5Stack-With-DHT22/
+
+// DHT22の結線は以下の通り
+//    ピンはセンサー正面向かって左から
+//    1 - VDD(3.3V)
+//    2 - SCA(GPIO5[M5Stack本体正面向かって右側上から6番目])
+//    3 - NC(nouse)
+//    4 - GND(GND)
+//    ※1と2を抵抗10k(茶黒橙金)でつなぐ
+// HW参考:
+// https://littlewing.hatenablog.com/entry/2016/06/09/140637
+
 
 // M5StackとDHTのライブラリ
 #include <M5Stack.h>
