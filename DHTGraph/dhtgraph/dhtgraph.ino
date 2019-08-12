@@ -105,7 +105,7 @@ void loop() {
 
   // ここで、サンプル行を制御します。最大値に達したら、値を減らします
   // 特定の最小値（この場合は10）まで、その後再び増加
-  if (linhaExemplo == 50) fator = -1;
+  if (linhaExemplo == 70) fator = -1;
   else if (linhaExemplo == 10) fator = 1;
 
   // 行の値を合計する
