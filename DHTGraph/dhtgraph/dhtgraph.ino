@@ -24,7 +24,7 @@
 #define YELLOW  0xFFE0
 #define WHITE   0xFFFF
 
-#define DHTPIN 5 // DHTで使用するピンNo
+#define DHTPIN 2 // DHTで使用するピンNo
 
 // センサーオブジェクト
 SimpleDHT22 dht;
